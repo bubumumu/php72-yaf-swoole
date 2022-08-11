@@ -180,7 +180,7 @@ RUN cd /tmp \
 
 RUN npm config set unsafe-perm true
 RUN npm install -g nodemon
-RUN mkdir -p /data/logs && chomd -R 0755 /data/logs
+# RUN mkdir -p /data/logs && chomd -R 0755 /data/logs
 
 WORKDIR /mnt/hgfs/
 

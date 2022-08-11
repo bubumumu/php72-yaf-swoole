@@ -178,6 +178,7 @@ RUN cd /tmp \
     && chmod +x composer.phar \
     && mv composer.phar /usr/local/bin/composer
 
+RUN npm config set unsafe-perm true
 RUN npm install -g nodemon
 RUN mkdir -p /data/logs && chomd -R 0755 /data/logs
 

@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64,linux/arm64 php:7.2.6-fpm-alpine
+FROM --platform=linux/arm64 php:7.2.6-fpm-alpine
 
 COPY conf/php.ini /usr/local/etc/php/php.ini
 COPY conf/www.conf /usr/local/etc/php/www.conf
